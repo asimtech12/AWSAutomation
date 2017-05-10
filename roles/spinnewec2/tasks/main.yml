@@ -8,6 +8,6 @@
        wait: yes
        assign_public_ip: yes
        count_tag: "{{ No_ec2_inst }}"
-       exact_count: 0
+       exact_count: 2
        vpc_subnet_id: "{{ vpc_subnet_id }}"
    register: ec2
