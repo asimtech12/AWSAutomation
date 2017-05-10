@@ -1,0 +1,13 @@
+---
+ - ec2:
+       key_name : "{{ key_pairname }}"
+       region: "{{ region }}"
+       group_id: "{{ security_group }}"
+       instance_type: "{{ instance_type }}"
+       image: "{{ image }}"
+       wait: yes
+       assign_public_ip: yes
+       count_tag: "{{ No_ec2_inst }}"
+       exact_count: 0
+       vpc_subnet_id: "{{ vpc_subnet_id }}"
+   register: ec2

@@ -1,0 +1,14 @@
+#this is my pet project parent yaml file
+---
+ - hosts: localhost
+   connection: local
+   gather_facts: False
+   remote_user: ec2-user
+
+
+   roles:
+    - spinnewec2
+
+ # - name: add users 
+ #   roles:
+ #    - addusers

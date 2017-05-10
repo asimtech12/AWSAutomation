@@ -1,0 +1,9 @@
+instance_type: t2.micro
+security_group: sg-ea6b7a96
+image: ami-c58c1dd3 #this is amazon image 
+region: us-east-1
+app_user: ec2-user # this is remote user 
+key_pairname: DCOS-Asim #this my key pair which I created for DC OS installation
+No_ec2_inst: 2
+vpc_subnet_id: subnet-ab146cce
+
